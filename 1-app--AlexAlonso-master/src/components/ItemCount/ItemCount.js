@@ -13,7 +13,7 @@ const decrementar = () =>{
 };
     return (
     <div>
-<h1>Item</h1>
+<h1>Contador</h1>
 <h2>{val}</h2>
 
 <button className='btn btn-outline-danger' onClick={decrementar}>-</button>
