@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
-const ItemCount = ( {stock, initial, onAdd}) => {
+
+
+const ItemCount = ( {stock, initial, onAdd, onAdd2}) => {
 
 const  [val, setCount] =  useState(initial)
 const incrementar = () =>{
@@ -13,7 +15,7 @@ const decrementar = () =>{
 };
     return (
     <div>
-<h1>Contador</h1>
+
 <h2>{val}</h2>
 
 <button className='btn btn-outline-danger' onClick={decrementar}>-</button>

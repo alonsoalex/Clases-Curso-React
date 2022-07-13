@@ -1,6 +1,6 @@
 import React from 'react'
 import CartWidgetSvg from '../CartWidgetSvg';
-import ItemCount from '../ItemCount';
+
 
 export const CartWidget = ({count}) => {
   return (

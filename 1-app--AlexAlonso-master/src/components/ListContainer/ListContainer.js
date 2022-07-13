@@ -1,6 +1,5 @@
 import React , { useEffect, useState } from 'react';
 
-import ItemCount from '../ItemCount';
 
 import ItemList from '../ItemList/itemL';
 import products from '../products.json'
@@ -12,7 +11,7 @@ const ListContainer = ({geeting}) => {
 
    useEffect(() => {
 
-    const getData = new Promise((resolve,) => {
+    const getData = new Promise((resolve) => {
      
       setTimeout(() => {
         
@@ -20,25 +19,23 @@ const ListContainer = ({geeting}) => {
       }, 2000);
     })
       .then((data) => {
-        setlist(products)
- console.log(data)
-         
-     
+   
+      setlist(products)
       })
      
   }, [])
-
-
+      
+  
+  
 
 return (<div>
 
     {geeting}
   
    
-   <ItemList  items={list}/>
+   <ItemList  items={list} items2={list}/>
 
     
-  <ItemCount stock={5} initial={1} onAdd ={(n)=> alert(`agregado ${n}`) }/>
    
 
    </div> 

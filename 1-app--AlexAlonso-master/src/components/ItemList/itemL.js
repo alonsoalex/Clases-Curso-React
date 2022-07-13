@@ -1,21 +1,13 @@
 import React from 'react'
-
+import ItemDetailConteiner from '../itemDetailConteiner'
 import Item from '../Item/Item'
 
-
-
-
-
-
-
-const itemL = ( {items}) => {
+const itemL = ( {items , itemsD}) => {
 
 
   
   return (
     <div >
-   
-
   
      {
  items.map(({id, title, description, price , image}) =>(
@@ -32,19 +24,20 @@ id={id}
  key={id}
       />
       </div>
+
+     
       </div>
 
      )  )
      
-     }  
+     } 
+  
       
          
 </div>
     
   
- 
-  )
-}
+ )}
 
 
 

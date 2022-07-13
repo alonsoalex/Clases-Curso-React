@@ -1,5 +1,7 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
+import ItemDetailConteiner from '../itemDetailConteiner';
+
 const Item = ({ id, title, description, price , image}) => {
   
   
@@ -13,6 +15,8 @@ const Item = ({ id, title, description, price , image}) => {
           <img className='card-img-top' src={image} alt={title}></img>
           <a href="#" className='btn btn-primary'>Go somewhere</a>
          </div>
+         <ItemDetailConteiner
+       />  
          </div>
              
   );
